@@ -6,8 +6,8 @@
 // Export the CORS configuration options
 module.exports = {
   // Allow requests from any origin
-  origin: true,
-  
+  origin: ['https://daplixo.github.io', 'http://127.0.0.1:5500'],
+
   // Allow credentials (cookies, authorization headers, etc)
   credentials: true,
   
