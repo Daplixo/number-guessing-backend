@@ -9,15 +9,17 @@ module.exports = {
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'PATCH'],
   allowedHeaders: [
-    'Origin',
-    'X-Requested-With',
-    'Content-Type',
-    'Accept',
-    'Authorization',
-    'x-auth-token',
-    'cache-control',
-    'Access-Control-Allow-Headers',
-    'Access-Control-Allow-Origin'
-  ],
+  'Origin',
+  'X-Requested-With',
+  'Content-Type',
+  'Accept',
+  'Authorization',
+  'x-auth-token',
+  'cache-control',
+  'Pragma', // ✅ THIS LINE is the fix
+  'Access-Control-Allow-Headers',
+  'Access-Control-Allow-Origin'
+],
+
   exposedHeaders: ['x-auth-token']
 };
