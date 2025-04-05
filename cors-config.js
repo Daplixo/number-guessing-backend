@@ -16,10 +16,9 @@ module.exports = {
   'Authorization',
   'x-auth-token',
   'cache-control',
-  'Pragma', // ✅ THIS LINE is the fix
+  'Pragma', // <== ✅ THIS is the line you need
   'Access-Control-Allow-Headers',
   'Access-Control-Allow-Origin'
 ],
-
   exposedHeaders: ['x-auth-token']
 };
